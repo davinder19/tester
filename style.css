@@ -40,10 +40,19 @@ body{
 .py-1{
     padding: 5rem;
 }
+a{
+    display: inline-block;
+    text-decoration: none;
+}
 
    .container{
        max-width: 1300px;
        margin: 0 auto;
+       
+   }
+   .nav-contain{
+    max-width: 1300px;
+    margin: 0 auto;
    }
    .second-header {
     font-size: 20px;
@@ -79,7 +88,7 @@ body{
        transition: all 0.3s ease-in-out;
        z-index: 100;
    }
-   .nav .container{
+   .nav .nav-contain{
        display: flex;
        justify-content: space-between;
        align-items: center;
@@ -328,7 +337,6 @@ transform: scale(1);
 
 /* <!-- /////////////////////////////////Projects-Section///////////////////////////////// --> */
 #projects-section{
-    border:  2px solid red;
     width: 100%;
     max-width: 1300px;
     margin: auto;
@@ -348,13 +356,76 @@ transform: scale(1);
     .card p{
         font-family: 'dosis', sans-serif;
     }
+    .share-box{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .share-box i{
+        color: #333;
+    }
+    .share-box button{
+        padding: 0;
+        background-color: #fff;
+        border: none;
+        outline: none;
+    }
+    /* /////////////////////toltip//////////////////// */
+    .share-box input{
+        opacity: 0;
+    }
+    .tooltip {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 100px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -50px;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      
+      .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+      }
+      
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+      }
     
 /* //////////////////////////////Mob Responsive////////////////////// */
 @media(max-width:60rem){
-
+  .nav .nav-contain{
+      padding: 20px 5px;
+  }
   .nav a{
       font-size: 10px;
   } 
+  .hero h1{
+      font-size: 20px;
+  }
+  .hero h2{
+      font-size: 15px;
+  }
   .d-dev{
       display: none;
   } 
