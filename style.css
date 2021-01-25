@@ -379,6 +379,7 @@ transform: scale(1);
     }
     .card{
         height: 500px;
+        padding: 12px;
     }
     .card img{
         width: 100%;
@@ -512,11 +513,15 @@ transform: scale(1);
   .d-dev{
       display: none;
   } 
-  #projects-section{
+  #projects{
     
     width: 100%;
     margin: auto;
     
+}
+#projects h1{
+ text-align: center;
+ margin-bottom: 1rem;
 }
   .projects-contianer{
       width: 100%;
@@ -524,6 +529,9 @@ transform: scale(1);
     /* grid-template-columns: repeat(3,1fr); */
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     grid-gap: 0.5rem;
+}
+.card{
+    padding: 10px;
 }
 
 }
