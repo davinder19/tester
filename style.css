@@ -10,10 +10,13 @@
    --purpl-color:#da70d6;
    --sue-me: #3a4e62;
    --yell-col: #fab131;
+   --blu-col:#29487D;
    
 }
 
-
+html{
+    scroll-behavior: smooth
+}
 
 *{
     margin: 0;
@@ -25,6 +28,7 @@ body{
     background-color: var(--bg-color);
     padding-bottom: 50px;
     line-height: 1.5;
+    ;
    }
    /* ///////////////////////////////////////utality classes/////////////// */
    .mxwidth{
@@ -59,6 +63,25 @@ a{
     text-align:center;
     color:var(--sub-color); 
     
+}
+h1{
+    font-family: 'dosis', sans-serif;
+}
+h2{
+    font-family: 'lato', sans-serif;
+    font-size: 15px;
+    color:var(--sub-color);
+}
+h3{
+    font-family: 'Roboto',sans-serif;
+}
+h4{
+    font-size: 13px;
+    font-family: 'Roboto', cursive;
+}
+p{
+    font-family: 'dosis', cursive;
+    font-size: 15px;
 }
 .card{
     background: #fff;
@@ -175,6 +198,7 @@ a{
         bottom: 50px;
         right: 50px;
         font-family: "Roboto", sans-serif;
+        
     }
     .d-dev   {
         font-family: 'Pacifico', sans-serif;
@@ -264,7 +288,7 @@ transform: scale(1);
 
 /* ////////////////////////////////////////////////////////////////////////////// */
 #about{
-    padding: 5rem 0;
+    padding: 8rem 0;
     text-align: center;
     background-color: #fab131;
  
@@ -336,11 +360,16 @@ transform: scale(1);
 
 
 /* <!-- /////////////////////////////////Projects-Section///////////////////////////////// --> */
-#projects-section{
+#projects{
     width: 100%;
     max-width: 1300px;
     margin: auto;
-    padding: 5rem 0;
+    padding: 8rem 0;
+}
+#projects h1{
+    font-size: 35px;
+    font-family: 'Dosis', sans-serif;
+    color: orange;
 }
 .projects-contianer{
         display: grid;
@@ -359,6 +388,111 @@ transform: scale(1);
     .card p{
         font-family: 'dosis', sans-serif;
     }
+    /* ///////////////////////////////////////skills///////////////////////////////// */
+    /*******************************************My Skills**********************************************************/
+#skills{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    padding: 10px;
+}
+.skills-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.skills-container h1{
+    font-family: fantasy;
+    color: var(--blu-col);
+}
+.skills-box h3{
+    text-align: left;
+    color: var(--sub-color);
+}
+.skills-boxes{
+
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    /* grid-template-columns: repeat(500px,1fr); */
+    grid-gap: 1rem;
+    margin: auto;
+    margin-top: 1rem;;
+    padding: 1rem;
+    justify-content: center;
+    /* align-items: center; */
+    /* border: 2px solid red; */
+    
+}
+
+.myskills{
+    width: 100%;
+    padding: 5px;
+    /* border: 2px solid red; */
+}
+.myskills i{
+    color: var(--blu-col);
+}
+.progress{
+    overflow: hidden;
+    height: 20px;
+    width: 100%;
+    background-color: var(--sub-color);
+    border-radius: 5px;
+    margin-bottom: 0.3 rem;
+}
+.progress div{
+    height: 100%;
+    text-align: center;
+    background-color:var(--yell-col);
+    
+} 
+
+.bar h4{
+    color: var(--option-bg);
+    font-size: 13px;
+    font-weight: lighter;
+
+}
+.skills-details{
+    width: 100%; 
+    /* border: 2px solid yellow; */
+}
+
+.skills-details-item{
+    
+    display: flex;
+    flex-direction: rows;
+    align-items: center ;
+    /* justify-content: center; */
+    align-items: center;
+    color: var(--primary-color);
+    margin-top: 13px;
+    /* border: 2px solid green; */
+ 
+}
+.skills-details-item a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+.skills-details-item:hover a{
+ transform: scale(1);
+}
+
+.skills-details-item i{
+    font-size: 35px;
+    color: var(--blu-col);
+}
     
   
 /* //////////////////////////////Mob Responsive////////////////////// */
