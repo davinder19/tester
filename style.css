@@ -193,7 +193,7 @@ a{
         bottom:200px;
         right: 250px;
         transform: rotateZ(10deg);
-        background-color: var(--sub-color);
+        background-color: #292929;
         padding: 0 10px;
     }
     /* .hero p{
@@ -348,70 +348,19 @@ transform: scale(1);
         grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
         grid-gap: 1rem;
     }
+    .card{
+        height: 500px;
+    }
     .card img{
         width: 100%;
-        height: 50%;
+        height: 60%;
 
     }
     .card p{
         font-family: 'dosis', sans-serif;
     }
-    .share-box{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .share-box i{
-        color: #333;
-    }
-    .share-box button{
-        padding: 0;
-        background-color: #fff;
-        border: none;
-        outline: none;
-    }
-    /* /////////////////////toltip//////////////////// */
-    .share-box input{
-        opacity: 0;
-    }
-    .tooltip {
-        position: relative;
-        display: inline-block;
-      }
-      
-      .tooltip .tooltiptext {
-        visibility: hidden;
-        width: 100px;
-        background-color: #555;
-        color: #fff;
-        text-align: center;
-        border-radius: 6px;
-        padding: 5px;
-        position: absolute;
-        z-index: 1;
-        bottom: 100%;
-        left: 50%;
-        margin-left: -50px;
-        opacity: 0;
-        transition: opacity 0.3s;
-      }
-      
-      .tooltip .tooltiptext::after {
-        content: "";
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        margin-left: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: #555 transparent transparent transparent;
-      }
-      
-      .tooltip:hover .tooltiptext {
-        visibility: visible;
-        opacity: 1;
-      }
     
+  
 /* //////////////////////////////Mob Responsive////////////////////// */
 @media(max-width:60rem){
   .nav .nav-contain{
